@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dessert Cart</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <main class="container">
+
+    <section class="products-section">
+      <h1>Desserts</h1>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <aside class="cart-section">
+      <h2>Your Cart (<span id="cartCount">0</span>)</h2>
+
+      <div id="emptyCart" class="empty-cart">
+        <img src="./assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-total hidden" id="cartTotalContainer">
+        <div class="total-row">
+          <span>Order Total</span>
+          <h3 id="cartTotal">$0.00</h3>
+        </div>
+
+        <div class="carbon-note">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+          <p>This is a <strong>carbon-neutral</strong> delivery</p>
+        </div>
+
+        <button class="confirm-btn">Confirm Order</button>
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
